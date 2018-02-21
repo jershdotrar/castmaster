@@ -1,0 +1,11 @@
+.contact__form {
+    display: block;
+
+    &-input {
+        margin: 2rem auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        width: 60rem;
+    }
+}

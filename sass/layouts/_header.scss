@@ -1,0 +1,40 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient( rgba($color-black, .3), rgba($color-black, .3)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: top;
+    /*Allows children to act relative*/
+    &-relative {
+        position: relative;
+    }
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    &__logo {
+        height: 8rem;
+    }
+    &__text-box {
+        position: absolute;
+        /*4 properties to properly center*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        @include respond(tab-port) {
+            left: 25%;
+            transform: translate(-15%, -50%);
+        }
+    }
+    &__nav {
+        // margin-left: 26.5%;
+        margin-left: 26%;
+        @include respond(tab-port) {
+            margin-left: 40%;
+        }
+        @include respond(phone-large) {
+            display: none;
+        }
+    }
+}

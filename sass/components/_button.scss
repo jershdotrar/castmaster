@@ -1,0 +1,65 @@
+.btn {
+    /*:link for when class is a link*/
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.3rem 3rem;
+        display: inline-block;
+        border-radius: .5rem;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        letter-spacing: .2rem;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        color: $color-white;
+
+        &::after {
+            transform: scaleX(1.5) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+
+    &--red {
+        background-color: $color-red;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-white;
+        }
+    }
+}
+
+input[type=submit] {
+        background-color: $color-red;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.3rem 3rem;
+        display: inline-block;
+        border-radius: .5rem;
+        border: none;
+        transition: all .2s;
+        position: relative;
+        font-size: $default-font-size;
+        letter-spacing: .2rem;
+
+        &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: 0 1rem 2rem rgba($color-black, .2);    
+            
+            &::after {
+                transform: scaleX(1.5) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+}

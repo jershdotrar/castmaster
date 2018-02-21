@@ -1,0 +1,66 @@
+body {
+    font-family: "usual", sans-serif;
+}
+
+h1 {
+  	font-weight:800;
+  	font-size: 3rem;
+}
+
+h2 {
+ 	font-weight:600;
+  	font-size: 2.5rem;
+}
+
+h3 {
+ 	font-weight:300;
+  	font-size: 2rem;
+}
+li {
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .5rem;
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 100;
+
+    &:hover {
+        color: $color-red;
+    }
+}
+
+.heading-primary {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 4rem;
+}
+
+.heading-secondary {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-bottom: 4rem;
+}
+
+.paragraph {
+    font-size: 1.85rem;
+    line-height: 2.7rem;
+    font-weight: 300;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+.text-white {
+    color: $color-white;
+}
+
+.text-black {
+    color: $color-black;
+}
