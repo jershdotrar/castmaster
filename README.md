@@ -1,0 +1,1 @@
+This is version 2.0 of the website. Current upcoming changes intended are adding better navigation, and adjusting further responsiveness. 
