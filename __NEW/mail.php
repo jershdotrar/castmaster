@@ -8,9 +8,9 @@
     $mailheader = "From: $email \r\n";
     if ($_POST['submit']) {
         if (mail($recipient, $subject, $body, $mailheader)) {
-            echo '<p>Thank you! Your message has been sent.</p>'
+            echo '<p>Thank you! Your message has been sent.</p>';
         } else {
-            echo '<p>Oops! Something went wrong.</p>'
+            echo '<p>Oops! Something went wrong.</p>';
         }
     }
 ?>
